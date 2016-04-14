@@ -34,6 +34,10 @@ class UorDescription:
 value = [
    ["unix-linux-x86_64-2.6.18-gcc-4.3.2", "BUILD", 7 ],
    ["unix-linux-x86_64-2.6.18-gcc-4.9.2", "BUILD", 7 ],
+   ["unix-linux-x86_64-2.6.18-gcc-4.9.2", "BUILD", 7 ],
+   ["unix-linux-x86_64-2.6.18-gcc-4.9.2", "BUILD", 7 ],
+   ["unix-linux-x86_64-2.6.18-gcc-4.9.2", "BUILD", 7 ],
+   ["unix-linux-x86_64-2.6.18-gcc-4.9.2", "BUILD", 7 ],   
    ["unix-linux-x86_64-2.6.18-gcc-4.9.2", "b ild", 7 ],
 ]
 

@@ -132,3 +132,66 @@
 	color: #339;
 }
 
+#c0dfd9
+#e9ece5
+#b3c2bf
+#3b3a36
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#333
+    margin:0;
+    padding:0;
+
+}
+#wrapper {
+    float: left;
+    width: 100%;
+    min-width: 1000px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+#header {
+    float: left;
+    height: 75px;
+    width: 100%;
+    background: #c0dfd9;
+}
+
+#contentliquid {
+    float: left;
+    width: 100%;
+}
+
+#content {
+    background: #e9ece5;
+    margin-left: 150px;    
+    overflow: hidden;
+}
+
+#nav {
+    float: left;
+    background: #b3c2bf;
+    width: 150px;
+    margin-left: -100%;
+    overflow: hidden;
+}
+#footer {
+    float: left;
+    height: 75px;
+    width: 100%;
+    background: #c0dfd9;
+}
+
+#footer {
+    height: 40px;
+    width: 100%;
+    background: #3b3a36;
+    clear: both;
+}
+
+
+
+
