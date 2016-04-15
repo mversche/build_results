@@ -19,28 +19,60 @@ body {
     height: 75px;
     width: 100%;
     background: #c0dfd9;
+    padding-left: 10px; 	
+	padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #nav {
     float: left;
     background: #b3c2bf;
     padding-left: 10px;
-    width: 150px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    width: 200px;
 }
 
 #content { 
     float: right;
-    width: calc(100% - 175px);
+    width: calc(100% - 225px);
     background: #e9ece5;    
-    padding-left: 10px;      
+    padding-left: 10px;   
+	padding-top: 10px;	
+    padding-bottom: 10px;
 }
-
 
 #footer {
     height: 40px;
     width: 100%;
     background: #3b3a36;
+	color: white;
     clear: both;
+    padding-left: 10px; 
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.nav_links {
+    font-size: 12px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #b3c2bf;
+}
+
+.nav_links li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+.nav_links li a:hover {
+    background-color: #3b3a36;
+    color: white;
 }
 
 .box-table-a
