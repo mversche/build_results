@@ -7,8 +7,7 @@ class ResultTableDescription:
         self.title = title
         self.link_text = link_text
         self.column_headers = column_headers
-        self.sql_statement = sql_statement
-        self.column_formatter = column_formatter
+        self.data = data
             
 def display_uplid(uplid_string):
     up = uplid.UplidDescription(uplid_string)

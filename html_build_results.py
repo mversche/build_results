@@ -1,15 +1,17 @@
 
 #!/usr/bin/env python
 
-import pandas
-
 from mako.template import Template
-import resulttable
+from resulttable import ResultTableDescription
 import results_sqlite_query
 import sqlite3
 
 conn = sqlite3.connect('example_results.db')
 
-tables = [(resulttable.SUMMARY_TABLE, results_sqlite_query.query_table(conn, resulttable.SUMMARY_TABLE))]
+data = results_sqlite_query.create_summary_table(conn)
+tables = [ResultTableDescription("Build Summary",
+                                 "Build Summary",
+                                 data[0],
+                                 data[1:])]
 print(Template(filename="./results_page.mako").render(tables = tables))
 conn.close()               

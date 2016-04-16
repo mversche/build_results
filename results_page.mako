@@ -10,7 +10,7 @@
     <div id="nav">
         <ul class="nav_links">
         % for (tableidx, table) in enumerate(tables):
-            <li class="nav_links"><a href="#table${tableidx}">${table[0].link_text}</a></li>
+            <li class="nav_links"><a href="#table${tableidx}">${table.link_text}</a></li>
         % endfor
         </ul>
     </div>  
@@ -18,16 +18,16 @@
         % for (tableidx, table) in enumerate(tables):
             <a name="table${tableidx}"></a>
             <h2>
-                ${tableidx + 1}. ${table[0].title}
+                ${tableidx + 1}. ${table.title}
             </h2>
             <table class="box-table-a">
                 <tr>
-                    % for cell in table[0].column_headers:
+                    % for cell in table.column_headers:
                     <th>${cell}</th>
                     % endfor
 
                 </tr>
-                % for row in table[1]:
+                % for row in table.data:
                     <tr>
                         % for cell in row:
                         <td>${cell}</td>
@@ -39,7 +39,7 @@
         % endfor
     </div>
   
- 
+
     <div id="footer">
         Generated now!
     </div>
