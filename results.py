@@ -16,5 +16,9 @@ for type in DETAILS:
     result = results_sqlite_query.create_package_group_detail_table(conn, type)
     results.append(ResultTable(type, type, result[0][0], result[1]))
     
-print(Template(filename="./results_page.mako").render(tables = results))
+commit_info = results_sqlite_query.create_commit_information_table(conn)
+results.append(commit_info)
+    
+print(Template(filename="./results_page.mako").render(tables = results,
+                                                      commit_info = commit_info))
 conn.close()               

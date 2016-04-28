@@ -42,6 +42,21 @@
 
     <div id="footer">
         Generated now!
+            <table>
+                <tr>
+                    % for cell in commit_info.column_headers:
+                    <th>${cell}</th>
+                    % endfor
+
+                </tr>
+                % for row in commit_info.data:
+                    <tr>
+                        % for cell in row:
+                        <td>${cell}</td>
+                        % endfor
+                    </tr>        
+                % endfor
+            </table>   
     </div>
 </div>
 

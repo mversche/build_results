@@ -3,6 +3,7 @@
 import sqlite3
 
 from pivot_table import PivotTable
+from result_table import ResultTable
 
 CATEGORY_SORT_KEY = { 'BUILD_ERROR'      : 0, 
                       'TEST_RUN_FAILURE' : 1, 
@@ -75,7 +76,18 @@ def create_package_group_detail_table(db_connection, category):
     result.insert_column_keys(uors)
     return result.flatten_table()
     
-
+def create_commit_information_table(db_connection):
+    cursor = db_connection.cursor()    
+    cursor.execute("""SELECT repository, branch, SHA
+                      FROM repositories
+                      ORDER BY priority""")
+    raw_table = cursor.fetchall()        
+    
+    return ResultTable("Repository Info", "Repositories",
+                       ["repository", "bbranch", "sha"],
+                       raw_table)
+                       
+    
 def main():
     conn = sqlite3.connect('example_results.db')
     table = create_summary_table(conn)   
