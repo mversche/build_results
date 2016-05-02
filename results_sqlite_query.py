@@ -4,12 +4,13 @@ import sqlite3
 
 from pivot_table import PivotTable
 from result_table import ResultTable
+from uplid import UplidDescription
 
-CATEGORY_SORT_KEY = { 'BUILD_ERROR'      : 0, 
-                      'TEST_RUN_FAILURE' : 1, 
-                      'BUILD_WARNING'    : 2, 
-                      'PROGRESS'         : 4, 
-                      'TEST_WARNING'     : 3 }       
+CATEGORY_SORT_KEY = { 'Build Error'      : 0, 
+                      'Test Run Failure' : 1, 
+                      'Build Warning'    : 2, 
+                      'Progress'         : 4, 
+                      'Test Warning'     : 3 }       
 
 UOR_SORT_KEY = { 'bsl'  : 0,
                  'bdl'  : 1,                      
@@ -22,7 +23,22 @@ UOR_SORT_KEY = { 'bsl'  : 0,
                  'bte'  : 8,
                  'bsi'  : 9,
                  'bbe'  : 10,
-                 'unknown' : 11}                 
+                 'unknown' : 11}  
+                 
+CATEGORY_NAME_MAP = {
+                    'BUILD_ERROR'      : 'Build Error', 
+                    'TEST_RUN_FAILURE' : 'Test Run Failure', 
+                    'BUILD_WARNING'    : 'Build Warning', 
+                    'PROGRESS'         : 'Progress', 
+                    'TEST_WARNING'     : 'Test Warning' }       
+                 
+                 
+def uplid_transform(uplid_string):
+    uplid = UplidDescription(uplid_string)
+    return uplid.os_name + " (" + uplid.compiler_type + "-" + uplid.compiler_version + ")"
+    
+def category_transform(category_string):
+    return CATEGORY_NAME_MAP[category_string]
                       
 def list_tables(db_connection):
     """
@@ -40,7 +56,9 @@ def create_summary_table(db_connection):
                    " WHERE category_name != 'TEST_WARNING'"\
                    " GROUP BY category_name, ufid, uplid;")
                     
-    raw_table = cursor.fetchall()    
+    raw_table = cursor.fetchall()   
+
+    raw_table = map(lambda x: [uplid_transform(x[0]), x[1], category_transform(x[2]), x[3]], raw_table)
     
     result = PivotTable(raw_table, 
                        ['uplid', 'ufid', 'category_name', 'count'], 
@@ -62,6 +80,7 @@ def create_package_group_detail_table(db_connection, category):
     
                     
     raw_table = cursor.fetchall()        
+    raw_table = map(lambda x: [uplid_transform(x[0]), x[1], x[2], x[3]], raw_table)
     
     result = PivotTable(raw_table, 
                        ['uplid', 'ufid', 'uor_name', 'count'], 

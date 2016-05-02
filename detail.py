@@ -51,7 +51,8 @@ def main():
     raw_table = cursor.fetchall()    
     conn.close()               
 
-    parsed_table = map(lambda x: {'uplid': x[0], 'ufid': x[1], 'uor': x[2], 'component': x[3], 'diagnostic': x[4].replace("\n", "<BR/>\n")}, raw_table)
+    parsed_table = list(map(lambda x: {'uplid': x[0], 'ufid': x[1], 'uor': x[2], 'component': x[3], 'diagnostic': x[4]}, raw_table))
     print(Template(filename="./detail_page.mako").render(details = parsed_table))
+    
 if __name__ == "__main__":
     main()

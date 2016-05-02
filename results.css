@@ -4,12 +4,9 @@ body {
     color:#333
 }
 
-
 #wrapper {
     float: left;
-    width: 100%;
-    min-width: 1000px;
-    max-width: 2000px;
+    width: 1200px;
     margin: 0 auto;
     background: #b3c2bf;
 }
@@ -17,7 +14,7 @@ body {
 #header {
     float: left;
     height: 75px;
-    width: 100%;
+    width: 1200px;
     background: #c0dfd9;
     padding-left: 10px; 	
 	padding-top: 10px;
@@ -27,30 +24,19 @@ body {
 #nav {
     float: left;
     background: #b3c2bf;
-    padding-left: 10px;
+    padding-left: 5px;
 	padding-top: 10px;
     padding-bottom: 10px;
     width: 200px;
 }
 
-#content { 
-    float: right;
-    width: calc(100% - 225px);
-    background: #e9ece5;    
-    padding-left: 10px;   
+#tableresults { 
+    float: left;  
+    padding-left: 5px;   
 	padding-top: 10px;	
     padding-bottom: 10px;
-}
-
-#footer {
-    height: 40px;
-    width: 100%;
-    background: #3b3a36;
-	color: white;
-    clear: both;
-    padding-left: 10px; 
-	padding-top: 10px;
-    padding-bottom: 10px;
+    background: white;
+    width: 990px;
 }
 
 ul.nav_links {
@@ -103,6 +89,17 @@ ul.nav_links {
 	border-right: 1px solid #aabcfe;
 	border-left: 1px solid #aabcfe;
 }
+
+.box-table-a-red td
+{
+	padding: 8px;
+	background: red; 
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid transparent;
+	border-right: 1px solid #aabcfe;
+	border-left: 1px solid #aabcfe;
+}
+
 .box-table-a tr:hover td
 {
 	background: #d0dafd;
