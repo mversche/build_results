@@ -18,7 +18,7 @@
         % for (tableidx, table) in enumerate(tables):
             <a name="table${tableidx}"></a>
             <h2>
-                ${tableidx + 1}. ${table.title}
+                ${table.title}
             </h2>
             <table class="box-table-a">
                 <tr>
@@ -30,8 +30,9 @@
                 % for row in table.data:
                     <tr>
                         % for idx, cell in enumerate(row):
-                            %if type(cell) is int:
-                                <td class="box-table-a-red" nowrap>${cell}</td>
+                            %if type(cell) is int and table.detail_link_function is not None:
+                                <% linktarget = table.detail_link_function(row, idx) %>
+                                <td class="box-table-a-red" nowrap><a href="${linktarget}">${cell}</a></td>
                             %else:
                                 <td nowrap>${cell}</td>
                             %endif

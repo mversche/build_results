@@ -6,11 +6,11 @@ from pivot_table import PivotTable
 from result_table import ResultTable
 from uplid import UplidDescription
 
-CATEGORY_SORT_KEY = { 'Build Error'      : 0, 
-                      'Test Run Failure' : 1, 
-                      'Build Warning'    : 2, 
-                      'Progress'         : 4, 
-                      'Test Warning'     : 3 }       
+CATEGORY_SORT_KEY = { 'BUILD_ERROR'      : 0, 
+                      'TEST_RUN_FAILURE' : 1, 
+                      'BUILD_WARNING'    : 2, 
+                      'PROGRESS'         : 4, 
+                      'TEST_WARNING'     : 3 }       
 
 UOR_SORT_KEY = { 'bsl'  : 0,
                  'bdl'  : 1,                      
@@ -49,6 +49,7 @@ def list_tables(db_connection):
     results = cursor.fetchall()
     return list(map(lambda x: x[0], results))       
     
+
 def create_summary_table(db_connection):
     cursor = db_connection.cursor()
     cursor.execute("SELECT uplid, ufid, category_name, SUM(cast(count as INTEGER)) "\
@@ -58,7 +59,7 @@ def create_summary_table(db_connection):
                     
     raw_table = cursor.fetchall()   
 
-    raw_table = map(lambda x: [uplid_transform(x[0]), x[1], category_transform(x[2]), x[3]], raw_table)
+    #raw_table = map(lambda x: [uplid_transform(x[0]), x[1], category_transform(x[2]), x[3]], raw_table)
     
     result = PivotTable(raw_table, 
                        ['uplid', 'ufid', 'category_name', 'count'], 
@@ -80,7 +81,7 @@ def create_package_group_detail_table(db_connection, category):
     
                     
     raw_table = cursor.fetchall()        
-    raw_table = map(lambda x: [uplid_transform(x[0]), x[1], x[2], x[3]], raw_table)
+    #raw_table = map(lambda x: [uplid_transform(x[0]), x[1], x[2], x[3]], raw_table)
     
     result = PivotTable(raw_table, 
                        ['uplid', 'ufid', 'uor_name', 'count'], 
@@ -106,7 +107,17 @@ def create_commit_information_table(db_connection):
                        ["repository", "bbranch", "sha"],
                        raw_table)
                        
+def create_build_attributes_information_table(db_connection):
+    cursor = db_connection.cursor()    
+    cursor.execute("""SELECT name, contents
+                      FROM status_entries
+                      ORDER BY name""")
+    raw_table = cursor.fetchall()        
     
+    return ResultTable("Build Attributes", "Build Attributes",
+                       ["Attribute", "Value"],
+                       raw_table)
+
 def main():
     conn = sqlite3.connect('example_results.db')
     table = create_summary_table(conn)   

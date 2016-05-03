@@ -14,68 +14,89 @@
             <li class="nav_links"><a href="#table2">Test Run Failure</a></li>
             <li class="nav_links"><a href="#table3">Build Warning</a></li>
             <li class="nav_links"><a href="#table4">Repositories</a></li>
+            <li class="nav_links"><a href="#table5">Build Attributes</a></li>
         </ul>
     </div>  
     <div id="tableresults">
             <a name="table0"></a>
             <h2>
-                1. Build Summary
+                Build Summary
             </h2>
             <table class="box-table-a">
                 <tr>
                     <th nowrap>uplid</th>
                     <th nowrap>ufid</th>
-                    <th nowrap>Build Error</th>
-                    <th nowrap>Test Run Failure</th>
-                    <th nowrap>Build Warning</th>
-                    <th nowrap>Progress</th>
+                    <th nowrap>BUILD_ERROR</th>
+                    <th nowrap>TEST_RUN_FAILURE</th>
+                    <th nowrap>BUILD_WARNING</th>
+                    <th nowrap>PROGRESS</th>
 
                 </tr>
                     <tr>
-                                <td nowrap>AIX (xlc-11.2)</td>
+                                <td nowrap>unix-AIX-powerpc-7.1-xlc-11.2</td>
                                 <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>863</td>
-                                <td class="box-table-a-red" nowrap>2766</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING'">863</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='PROGRESS'">2766</a></td>
                     </tr>        
                     <tr>
-                                <td nowrap>Linux (gcc-4.9.2)</td>
+                                <td nowrap>unix-Linux-x86_64-2.6.18-gcc-4.9.2</td>
                                 <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>1</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>11</td>
-                                <td class="box-table-a-red" nowrap>2296</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR'">1</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING'">11</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='PROGRESS'">2296</a></td>
                     </tr>        
                     <tr>
-                                <td nowrap>SunOS (cc-5.12)</td>
+                                <td nowrap>unix-SunOS-sparc-5.10-cc-5.12</td>
                                 <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>8</td>
-                                <td class="box-table-a-red" nowrap>983</td>
-                                <td class="box-table-a-red" nowrap>2806</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE'">8</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING'">983</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='PROGRESS'">2806</a></td>
                     </tr>        
                     <tr>
-                                <td nowrap>Windows_NT (cl-18.00)</td>
-                                <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>5</td>
-                                <td class="box-table-a-red" nowrap>1079</td>
-                                <td class="box-table-a-red" nowrap>1092</td>
-                    </tr>        
-                    <tr>
-                                <td nowrap>darwin (clang-5.1.0)</td>
+                                <td nowrap>unix-darwin-x86_64-13.2.0-clang-5.1.0</td>
                                 <td nowrap>dbg_exc_mt_64_cpp11</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>3</td>
-                                <td class="box-table-a-red" nowrap>14</td>
-                                <td class="box-table-a-red" nowrap>2806</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='BUILD_ERROR'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='TEST_RUN_FAILURE'">3</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='BUILD_WARNING'">14</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='PROGRESS'">2806</a></td>
+                    </tr>        
+                    <tr>
+                                <td nowrap>windows-Windows_NT-amd64-6.1-cl-18.00</td>
+                                <td nowrap>dbg_exc_mt_cpp11</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE'">5</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING'">1079</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='PROGRESS'">1092</a></td>
                     </tr>        
             </table>   
             <a href="#top">top</a>            
             <a name="table1"></a>
             <h2>
-                2. Build Error
+                Build Error
             </h2>
             <table class="box-table-a">
                 <tr>
@@ -90,20 +111,26 @@
 
                 </tr>
                     <tr>
-                                <td nowrap>Linux (gcc-4.9.2)</td>
+                                <td nowrap>unix-Linux-x86_64-2.6.18-gcc-4.9.2</td>
                                 <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>1</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR' uor='bsl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR' uor='bdl'">1</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR' uor='bal'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR' uor='btl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR' uor='bbl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_ERROR' uor='unknown'">0</a></td>
                     </tr>        
             </table>   
             <a href="#top">top</a>            
             <a name="table2"></a>
             <h2>
-                3. Test Run Failure
+                Test Run Failure
             </h2>
             <table class="box-table-a">
                 <tr>
@@ -118,40 +145,58 @@
 
                 </tr>
                     <tr>
-                                <td nowrap>SunOS (cc-5.12)</td>
+                                <td nowrap>unix-SunOS-sparc-5.10-cc-5.12</td>
                                 <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>1</td>
-                                <td class="box-table-a-red" nowrap>3</td>
-                                <td class="box-table-a-red" nowrap>1</td>
-                                <td class="box-table-a-red" nowrap>3</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='bsl'">1</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='bdl'">3</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='bal'">1</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='btl'">3</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='bbl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='unknown'">0</a></td>
                     </tr>        
                     <tr>
-                                <td nowrap>Windows_NT (cl-18.00)</td>
-                                <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>1</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>2</td>
-                                <td class="box-table-a-red" nowrap>2</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                    </tr>        
-                    <tr>
-                                <td nowrap>darwin (clang-5.1.0)</td>
+                                <td nowrap>unix-darwin-x86_64-13.2.0-clang-5.1.0</td>
                                 <td nowrap>dbg_exc_mt_64_cpp11</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>1</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>2</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='TEST_RUN_FAILURE' uor='bsl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='TEST_RUN_FAILURE' uor='bdl'">1</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='TEST_RUN_FAILURE' uor='bal'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='TEST_RUN_FAILURE' uor='btl'">2</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='TEST_RUN_FAILURE' uor='bbl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='TEST_RUN_FAILURE' uor='unknown'">0</a></td>
+                    </tr>        
+                    <tr>
+                                <td nowrap>windows-Windows_NT-amd64-6.1-cl-18.00</td>
+                                <td nowrap>dbg_exc_mt_cpp11</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='bsl'">1</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='bdl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='bal'">2</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='btl'">2</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='bbl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='TEST_RUN_FAILURE' uor='unknown'">0</a></td>
                     </tr>        
             </table>   
             <a href="#top">top</a>            
             <a name="table3"></a>
             <h2>
-                4. Build Warning
+                Build Warning
             </h2>
             <table class="box-table-a">
                 <tr>
@@ -166,60 +211,90 @@
 
                 </tr>
                     <tr>
-                                <td nowrap>AIX (xlc-11.2)</td>
+                                <td nowrap>unix-AIX-powerpc-7.1-xlc-11.2</td>
                                 <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>424</td>
-                                <td class="box-table-a-red" nowrap>196</td>
-                                <td class="box-table-a-red" nowrap>138</td>
-                                <td class="box-table-a-red" nowrap>80</td>
-                                <td class="box-table-a-red" nowrap>21</td>
-                                <td class="box-table-a-red" nowrap>4</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bsl'">424</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bdl'">196</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bal'">138</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='btl'">80</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bbl'">21</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-AIX-powerpc-7.1-xlc-11.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='unknown'">4</a></td>
                     </tr>        
                     <tr>
-                                <td nowrap>Linux (gcc-4.9.2)</td>
+                                <td nowrap>unix-Linux-x86_64-2.6.18-gcc-4.9.2</td>
                                 <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>4</td>
-                                <td class="box-table-a-red" nowrap>5</td>
-                                <td class="box-table-a-red" nowrap>1</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>1</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bsl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bdl'">4</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bal'">5</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='btl'">1</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bbl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-Linux-x86_64-2.6.18-gcc-4.9.2' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='unknown'">1</a></td>
                     </tr>        
                     <tr>
-                                <td nowrap>SunOS (cc-5.12)</td>
+                                <td nowrap>unix-SunOS-sparc-5.10-cc-5.12</td>
                                 <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>424</td>
-                                <td class="box-table-a-red" nowrap>196</td>
-                                <td class="box-table-a-red" nowrap>138</td>
-                                <td class="box-table-a-red" nowrap>80</td>
-                                <td class="box-table-a-red" nowrap>21</td>
-                                <td class="box-table-a-red" nowrap>124</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bsl'">424</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bdl'">196</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bal'">138</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='btl'">80</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bbl'">21</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-SunOS-sparc-5.10-cc-5.12' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='unknown'">124</a></td>
                     </tr>        
                     <tr>
-                                <td nowrap>Windows_NT (cl-18.00)</td>
-                                <td nowrap>dbg_exc_mt_cpp11</td>
-                                <td class="box-table-a-red" nowrap>426</td>
-                                <td class="box-table-a-red" nowrap>196</td>
-                                <td class="box-table-a-red" nowrap>138</td>
-                                <td class="box-table-a-red" nowrap>80</td>
-                                <td class="box-table-a-red" nowrap>21</td>
-                                <td class="box-table-a-red" nowrap>218</td>
-                    </tr>        
-                    <tr>
-                                <td nowrap>darwin (clang-5.1.0)</td>
+                                <td nowrap>unix-darwin-x86_64-13.2.0-clang-5.1.0</td>
                                 <td nowrap>dbg_exc_mt_64_cpp11</td>
-                                <td class="box-table-a-red" nowrap>2</td>
-                                <td class="box-table-a-red" nowrap>3</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>0</td>
-                                <td class="box-table-a-red" nowrap>9</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='BUILD_WARNING' uor='bsl'">2</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='BUILD_WARNING' uor='bdl'">3</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='BUILD_WARNING' uor='bal'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='BUILD_WARNING' uor='btl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='BUILD_WARNING' uor='bbl'">0</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='unix-darwin-x86_64-13.2.0-clang-5.1.0' ufid='dbg_exc_mt_64_cpp11' category='BUILD_WARNING' uor='unknown'">9</a></td>
+                    </tr>        
+                    <tr>
+                                <td nowrap>windows-Windows_NT-amd64-6.1-cl-18.00</td>
+                                <td nowrap>dbg_exc_mt_cpp11</td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bsl'">426</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bdl'">196</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bal'">138</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='btl'">80</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='bbl'">21</a></td>
+                                
+                                <td class="box-table-a-red" nowrap><a href="detail.py uplid='windows-Windows_NT-amd64-6.1-cl-18.00' ufid='dbg_exc_mt_cpp11' category='BUILD_WARNING' uor='unknown'">218</a></td>
                     </tr>        
             </table>   
             <a href="#top">top</a>            
             <a name="table4"></a>
             <h2>
-                5. Repository Info
+                Repository Info
             </h2>
             <table class="box-table-a">
                 <tr>
@@ -242,6 +317,42 @@
                                 <td nowrap>bde</td>
                                 <td nowrap>stdhdrs-patches</td>
                                 <td nowrap>950ed70f9146502fd55cdbad9907312fe2604487</td>
+                    </tr>        
+            </table>   
+            <a href="#top">top</a>            
+            <a name="table5"></a>
+            <h2>
+                Build Attributes
+            </h2>
+            <table class="box-table-a">
+                <tr>
+                    <th nowrap>Attribute</th>
+                    <th nowrap>Value</th>
+
+                </tr>
+                    <tr>
+                                <td nowrap>Args</td>
+                                <td nowrap>['/bbshr/bde/bde-ci-tools/bin/matrix_build.py', '-c', 'bde-cpp11-stdhdrs-patches.cfg']</td>
+                    </tr>        
+                    <tr>
+                                <td nowrap>CheckoutPath</td>
+                                <td nowrap>/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI</td>
+                    </tr>        
+                    <tr>
+                                <td nowrap>DbKey</td>
+                                <td nowrap>mgiroux_FLBZIXHQB8TI_20160414-080619</td>
+                    </tr>        
+                    <tr>
+                                <td nowrap>LogPath</td>
+                                <td nowrap>/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/./logs/20160414-080619</td>
+                    </tr>        
+                    <tr>
+                                <td nowrap>Tag</td>
+                                <td nowrap>mgiroux_FLBZIXHQB8TI</td>
+                    </tr>        
+                    <tr>
+                                <td nowrap>URL</td>
+                                <td nowrap>http://bderesults.dev.bloomberg.com/summary.py?branch=mgiroux_FLBZIXHQB8TI_20160414-080619;date=20160414;warnings=1</td>
                     </tr>        
             </table>   
             <a href="#top">top</a>            

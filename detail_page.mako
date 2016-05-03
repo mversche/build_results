@@ -13,13 +13,8 @@
     % endfor
 </ul>
 % for idx, row in enumerate(details):
- 
     <a name="table${idx}"></a>
-    <table>        
-        <tr>
-            <td>${row['uplid']} </td><td> ${row['ufid']}</td><td>${row['component']}</td>
-        </tr>
-    </table></h1>
+    <h1><pre>${row['component']}  [${row['uplid']}, ${row['ufid']}]</pre></h1> 
     <a href="#top">top</a> 
     <pre>
         ${row['diagnostic']}
