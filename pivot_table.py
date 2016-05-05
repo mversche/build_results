@@ -126,23 +126,60 @@ class PivotTable:
           ...
          ])
         """
-        assert len(self.column_items) == 1
-        assert len(self.value_items) == 1
+        # First we generate a list containing the cross product of columns and
+        # values items in (column_key, value) tuples.  The final list might 
+        # look like:
+        #  [(("1999", "Q1"), ("Sales")), ... ]
+        #     ^^ col key        ^^ value key 
         
-        headers = []
-        headers = self.row_items
+        table_column_keys = []
+        headers = []        
         for column in self.column_keys:
-            headers.append(column[0])
+            for value in self.value_keys:
+                table_column_keys.append((column, value))
+                headers.append(list(column) + list(value))
+                
+        # Note that headers now looks like:
+        # [["1999", "Q1", "Sales"],  ["1999", "Q1", "Costs"] ]
+        # We rotate that 90 degrees:
+        # [["1999", "1999"], ["Q1", "Q1"], ["Sales", "Costs"]]
+        headers = list(zip(*reversed(headers)))
+        
+    
+        # Now we insert blank columns for the row_items
+        headers = list(map(lambda x: ([""] * len(self.row_items)) + list(x), headers))
+        
+        # Add add the row item headers to the last header row
+        for idx, row_item in enumerate(self.row_items):
+            headers[-1][idx] = self.row_items[idx]
+            
         table = []
         for row in self.row_keys:
             row_value = list(row)
-            for column in self.column_keys:
-                row_value.append(self.result[row][column][tuple([self.value_items[0]])])
+            for column_key_and_value_key_pair in table_column_keys:
+                row_value.append(self.result[row]
+                                [column_key_and_value_key_pair[0]]
+                                [column_key_and_value_key_pair[1]])
             table.append(row_value)    
-        return ([headers], table)
+        return (headers, table)
        
 
-def main():
+def print_table(table):
+    headers = table[0]
+    data = table[1]
+    
+    for row in headers:
+        # pad cells to 8 chars
+        formatted_cells = map(lambda x: "{:>8}".format(x), row)
+        print(" | ".join(formatted_cells))
+    
+    print("-|-".join(['-'*8]*len(headers[0])))
+    for row in data:
+        # pad cells to 6 chars
+        formatted_cells = map(lambda x: "{:>8}".format(x), row)
+        print(" | ".join(formatted_cells))
+        
+def test1():
     TEST_DATA_COLS = ["Product", "Country", "Year", "Sales", "Costs"]
     TEST_DATA      = [
         ["Chair", "USA", 1999, 10, 5],
@@ -168,9 +205,43 @@ def main():
     
     pivot = PivotTable(TEST_DATA, TEST_DATA_COLS, TEST_ROW_ITEMS, TEST_COL_ITEMS, TEST_VALUE_ITEMS, TEST_ITEM_SORTS)
     table = pivot.flatten_table()
-    print(table[0])
-    for row in table[1]:
-        print(row)
+    print_table(table)
+        
+def test2():
+    TEST_DATA_COLS = ["Product", "Country", "Year", "Quarter", "Sales", "Costs"]
+    TEST_DATA      = [
+        ["Chair", "USA", 1999, "Q1", 10, 5],
+        ["Table", "USA", 1999, "Q3", 10, 5],
+        ["Chair", "USA", 2000, "Q1", 10, 5],
+        ["Table", "USA", 2000, "Q3", 10, 5],        
+        ["Chair", "Canada", 1999, "Q2", 10, 5],
+        ["Chair", "Canada", 1999, "Q4", 10, 5],        
+        ["Table", "Canada", 1999, "Q1", 10, 5],
+        ["Table", "Canada", 2001, "Q2", 10, 5],        
+        ["Chair", "UK", 1999, "Q1", 20, 5],
+        ["Chair", "UK", 1999, "Q1", 20, 5],        
+        ["Piano", "UK", 1999, "Q4", 20, 5],
+        ["Table", "UK", 2001, "Q3", 20, 5]
+        ]
+    
+    TEST_ROW_ITEMS = ["Country", "Product"]
+    TEST_COL_ITEMS = ["Year", "Quarter"]
+    TEST_VALUE_ITEMS = ["Sales", "Costs"]
+    
+    PRODUCT_SORT_KEY = {"Piano": 1, "Table": 2,  "Chair": 3}
+    TEST_ITEM_SORTS = {"Product": lambda x: PRODUCT_SORT_KEY[x],
+                       "Year" : lambda x: -x,
+                       "Quarter" : lambda x: -int(x[1])}
+    
+    pivot = PivotTable(TEST_DATA, TEST_DATA_COLS, TEST_ROW_ITEMS, TEST_COL_ITEMS, TEST_VALUE_ITEMS, TEST_ITEM_SORTS)
+    table = pivot.flatten_table()
+    print_table(table)
+    
+def main():
+    test1()
+    print("")
+    test2()
+    
     
 if __name__ == "__main__":
     main()

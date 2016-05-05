@@ -96,6 +96,41 @@ def create_package_group_detail_table(db_connection, category):
     result.insert_column_keys(uors)
     return result.flatten_table()
     
+def create_failure_list(db_connection, category, limit, uplid = None, ufid = None):
+    cursor = db_connection.cursor()
+    
+    statement = """
+        SELECT component_name, uplid, ufid, 1
+        FROM build_results
+        WHERE {where}
+        GROUP BY component_name, uplid, ufid
+        """
+    
+    where_clause = ["category_name == :category"]
+    bind_parameters = {'category' : category}
+    if (uplid is not None):
+        where_clause.append("uplid == :uplid")
+        bind_parameters['uplid'] = uplid
+    if (ufid is not None):
+        where_clause.append("ufid == :ufid")
+        bind_parameters['ufid'] = ufid
+    
+    print(statement.format(where = " AND ".join(where_clause), limit = limit))
+    cursor.execute(statement.format(where = " AND ".join(where_clause), limit = limit),
+                   bind_parameters)
+    raw_table = cursor.fetchall()                
+    result = PivotTable(raw_table, 
+                       ['component', 'uplid', 'ufid', 'count'], 
+                       ['component'],
+                       ['uplid', 'ufid'],
+                       ['count'],
+                       {}
+                       )
+                   
+    
+    return result.flatten_table()
+    
+    
 def create_commit_information_table(db_connection):
     cursor = db_connection.cursor()    
     cursor.execute("""SELECT repository, branch, SHA
