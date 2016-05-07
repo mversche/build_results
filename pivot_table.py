@@ -144,7 +144,7 @@ class PivotTable:
         # We rotate that 90 degrees:
         # [["1999", "1999"], ["Q1", "Q1"], ["Sales", "Costs"]]
         headers = list(zip(*reversed(headers)))
-        
+        table_column_keys = list(reversed(table_column_keys))
     
         # Now we insert blank columns for the row_items
         headers = list(map(lambda x: ([""] * len(self.row_items)) + list(x), headers))
