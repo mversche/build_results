@@ -1,5 +1,15 @@
 #!/usr/bin/env python
 
+import os
+import sys
+
+def add_lib_path():
+    upd = os.path.dirname
+    lib_path = os.path.join(upd(os.path.realpath(__file__)),"lib")
+    print(lib_path)
+    sys.path = [lib_path] + sys.path
+
+add_lib_path()
 from mako.template import Template
 from result_table import ResultTable
 import results_sqlite_query
