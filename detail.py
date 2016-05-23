@@ -38,18 +38,19 @@ def main():
     conn = sqlite3.connect(args.database)
     cursor = conn.cursor()
     
-    restrictions = ["category_name == ?"]
-    restriction_values = [args.category]
+    parameters = {}
+    restrictions = ["category_name == :category"]
+    parameters['category'] = args.category
     if (args.uplid is not None):
-        restrictions.append("uplid == ?")
-        restriction_values = [args.uplid]
+        restrictions.append("uplid == :uplid")
+        parameters['uplid'] = args.uplid
     if (args.ufid is not None):
-        restrictions.append("ufid == ?")
-        restriction_values = [args.ufid]
+        restrictions.append("ufid == :ufid")
+        parameters['ufid'] = args.ufid
     if (args.uor is not None):
-        restrictions.append("uor_name == ?")
-        restriction_values = [args.uor]
-
+        restrictions.append("uor_name == :uor")
+        parameters['uor'] = args.uor
+        
     where_clause = " AND ".join(restrictions)
     sql_statement = """
         SELECT uplid, ufid, uor_name, component_name, diagnostics
@@ -57,11 +58,12 @@ def main():
         WHERE {}
         ORDER BY uplid, ufid, component_name""".format(where_clause)
                     
-    cursor.execute(sql_statement, restriction_values)    
+    cursor.execute(sql_statement, parameters)    
     raw_table = cursor.fetchall()    
     conn.close()               
 
-    parsed_table = map(lambda x: {'uplid': x[0], 'ufid': x[1], 'uor': x[2], 'component': x[3], 'diagnostic': x[4].replace("\n", "<BR/>\n")}, raw_table)
+    parsed_table = list(map(lambda x: {'uplid': x[0], 'ufid': x[1], 'uor': x[2], 'component': x[3], 'diagnostic': x[4]}, raw_table))
     print(Template(filename="./detail_page.mako").render(details = parsed_table))
+    
 if __name__ == "__main__":
     main()

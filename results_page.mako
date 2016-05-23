@@ -14,49 +14,34 @@
         % endfor
         </ul>
     </div>  
-    <div id="content">
+    <div id="tableresults">
         % for (tableidx, table) in enumerate(tables):
             <a name="table${tableidx}"></a>
             <h2>
-                ${tableidx + 1}. ${table.title}
+                ${table.title}
             </h2>
             <table class="box-table-a">
                 <tr>
                     % for cell in table.column_headers:
-                    <th>${cell}</th>
+                    <th nowrap>${cell}</th>
                     % endfor
 
                 </tr>
                 % for row in table.data:
                     <tr>
-                        % for cell in row:
-                        <td>${cell}</td>
+                        % for idx, cell in enumerate(row):
+                            %if type(cell) is int and table.detail_link_function is not None:
+                                <% linktarget = table.detail_link_function(row, idx) %>
+                                <td class="box-table-a-red" nowrap><a href="${linktarget}">${cell}</a></td>
+                            %else:
+                                <td nowrap>${cell}</td>
+                            %endif
                         % endfor
                     </tr>        
                 % endfor
             </table>   
             <a href="#top">top</a>            
         % endfor
-    </div>
-  
-
-    <div id="footer">
-        Generated now!
-            <table>
-                <tr>
-                    % for cell in commit_info.column_headers:
-                    <th>${cell}</th>
-                    % endfor
-
-                </tr>
-                % for row in commit_info.data:
-                    <tr>
-                        % for cell in row:
-                        <td>${cell}</td>
-                        % endfor
-                    </tr>        
-                % endfor
-            </table>   
     </div>
 </div>
 

@@ -1,849 +1,1389 @@
 <head>
 <link rel="stylesheet" type="text/css" href="detail.css">
 </head>
-    <table>
-        <tr>
-            <th>UPLID</th><th>UFID</th><th>UOR</th>
-        </tr>
-        <tr>
-            <td>unix-Linux-x86_64-2.6.18-gcc-4.9.2 </td><td> dbg_exc_mt_cpp11</td><td>bdl</td>
-        </tr>
-    </table></h1>
-     nylnxbldo1 nylnxbldo1<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptr.h:1469:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_ownerless.h:36,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:305,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h:84:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h:84:43: error: expected unqualified-id before '<' token<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h:90:22: error: 'ReboundTraits' has not been declared<BR/>
-     typedef typename ReboundTraits::allocator_type ReboundAllocator;<BR/>
-                      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h: In static member function 'static BloombergLP::bslstl::SharedPtrAllocateInplaceRep<TYPE, ALLOCATOR>* BloombergLP::bslstl::SharedPtrAllocateInplaceRep<TYPE, ALLOCATOR>::makeRep(BloombergLP::bslstl::SharedPtrAllocateInplaceRep<TYPE, ALLOCATOR>::ReboundAllocator)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h:204:37: error: 'ReboundTraits' has not been declared<BR/>
-                                     ReboundTraits::allocate(basicAllocator, 1);<BR/>
-                                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h: In member function 'virtual void BloombergLP::bslstl::SharedPtrAllocateInplaceRep<TYPE, ALLOCATOR>::disposeObject()':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h:214:5: error: 'ReboundTraits' has not been declared<BR/>
-     ReboundTraits::destroy(d_allocator, ptr());<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h: In member function 'virtual void BloombergLP::bslstl::SharedPtrAllocateInplaceRep<TYPE, ALLOCATOR>::disposeRep()':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateinplacerep.h:223:5: error: 'ReboundTraits' has not been declared<BR/>
-     ReboundTraits::deallocate(alloc, this, 1);<BR/>
-     ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptr.h:1473:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_ownerless.h:36,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:305,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h: At global scope:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h:235:18: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef bsl::allocator_traits<ALLOCATOR> OriginalTraits;<BR/>
-                  ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h:238:10: error: 'OriginalTraits' has not been declared<BR/>
-          OriginalTraits::template rebind_traits<SharedPtrAllocateOutofplaceRep><BR/>
-          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h:238:48: error: expected template-name before '<' token<BR/>
-          OriginalTraits::template rebind_traits<SharedPtrAllocateOutofplaceRep><BR/>
-                                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h:238:48: error: expected identifier before '<' token<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h:238:48: error: expected unqualified-id before '<' token<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h:240:22: error: 'AllocatorTraits' has not been declared<BR/>
-     typedef typename AllocatorTraits::allocator_type Allocator;<BR/>
-                      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h: In static member function 'static BloombergLP::bslstl::SharedPtrAllocateOutofplaceRep<TYPE, DELETER, ALLOCATOR>* BloombergLP::bslstl::SharedPtrAllocateOutofplaceRep<TYPE, DELETER, ALLOCATOR>::makeOutofplaceRep(TYPE*, const DELETER&, const ALLOCATOR&)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h:404:43: error: 'AllocatorTraits' has not been declared<BR/>
-     SharedPtrAllocateOutofplaceRep *rep = AllocatorTraits::allocate(alloc, 1);<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h: In member function 'virtual void BloombergLP::bslstl::SharedPtrAllocateOutofplaceRep<TYPE, DELETER, ALLOCATOR>::disposeRep()':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_sharedptrallocateoutofplacerep.h:427:5: error: 'AllocatorTraits' has not been declared<BR/>
-     AllocatorTraits::deallocate(alloc, this, 1);<BR/>
-     ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:302:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_autoarraydestructor.h: In destructor 'BloombergLP::bslalg::AutoArrayDestructor<OBJECT_TYPE, ALLOCATOR>::~AutoArrayDestructor()':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_autoarraydestructor.h:279:5: error: 'ArrayDestructionPrimitives' has not been declared<BR/>
-     ArrayDestructionPrimitives::destroy(d_begin_p, d_end_p, d_allocator);<BR/>
-     ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:306:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_autoarraymovedestructor.h: In destructor 'BloombergLP::bslalg::AutoArrayMoveDestructor<OBJECT_TYPE, ALLOCATOR>::~AutoArrayMoveDestructor()':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_autoarraymovedestructor.h:408:9: error: 'ArrayDestructionPrimitives' has not been declared<BR/>
-         ArrayDestructionPrimitives::destroy(d_begin_p,<BR/>
-         ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: At global scope:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:477:32: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:477:48: error: expected ',' or '...' before '<' token<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:484:31: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                 typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                               ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:484:47: error: expected ',' or '...' before '<' token<BR/>
-                 typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                               ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:483:5: error: 'template<class SOURCE_TYPE, class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::copyConstruct(int)' cannot be overloaded<BR/>
-     copyConstruct(<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:476:5: error: with 'template<class FWD_ITER, class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::copyConstruct(int)'<BR/>
-     copyConstruct(<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:523:32: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:523:48: error: expected ',' or '...' before '<' token<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:565:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  begin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:565:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  begin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:597:32: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:597:48: error: expected ',' or '...' before '<' token<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:633:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:633:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:686:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:686:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:685:17: error: 'template<class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::destructiveMoveAndInsert(int)' cannot be overloaded<BR/>
-     static void destructiveMoveAndInsert(<BR/>
-                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:632:17: error: with 'template<class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::destructiveMoveAndInsert(int)'<BR/>
-     static void destructiveMoveAndInsert(<BR/>
-                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:740:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:740:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:802:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:802:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:868:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     emplace(typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:868:43: error: expected ',' or '...' before '<' token<BR/>
-     emplace(typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1625:25: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     erase(typename bsl::allocator_traits<ALLOCATOR>::pointer first,<BR/>
-                         ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1625:41: error: expected ',' or '...' before '<' token<BR/>
-     erase(typename bsl::allocator_traits<ALLOCATOR>::pointer first,<BR/>
-                                         ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1658:26: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer     toBegin,<BR/>
-                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1658:42: error: expected ',' or '...' before '<' token<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer     toBegin,<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1695:21: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-       typename bsl::allocator_traits<ALLOCATOR>::pointer           toBegin,<BR/>
-                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1695:37: error: expected ',' or '...' before '<' token<BR/>
-       typename bsl::allocator_traits<ALLOCATOR>::pointer           toBegin,<BR/>
-                                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1694:5: error: 'template<class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::insert(int)' cannot be overloaded<BR/>
-     insert(<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1658:5: error: with 'template<class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::insert(int)'<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer     toBegin,<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1733:26: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1733:42: error: expected ',' or '...' before '<' token<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1741:26: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1741:42: error: expected ',' or '...' before '<' token<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1741:5: error: 'template<class SOURCE_TYPE, class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::insert(int)' cannot be overloaded<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1733:5: error: with 'template<class FWD_ITER, class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::insert(int)'<BR/>
-     insert(typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1797:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1797:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1870:21: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-       typename bsl::allocator_traits<ALLOCATOR>::pointer           begin,<BR/>
-                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:1870:37: error: expected ',' or '...' before '<' token<BR/>
-       typename bsl::allocator_traits<ALLOCATOR>::pointer           begin,<BR/>
-                                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3618:21: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-       typename bsl::allocator_traits<ALLOCATOR>::pointer           begin,<BR/>
-                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3618:37: error: expected ',' or '...' before '<' token<BR/>
-       typename bsl::allocator_traits<ALLOCATOR>::pointer           begin,<BR/>
-                                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: In static member function 'static void BloombergLP::bslalg::ArrayPrimitives::uninitializedFillN(int)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3626:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3626:43: error: expected unqualified-id before '<' token<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3635:58: error: 'TARGET_TYPE' was not declared in this scope<BR/>
-         k_IS_FUNCTION_POINTER = bslmf::IsFunctionPointer<TARGET_TYPE>::value,<BR/>
-                                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3635:69: error: template argument 1 is invalid<BR/>
-         k_IS_FUNCTION_POINTER = bslmf::IsFunctionPointer<TARGET_TYPE>::value,<BR/>
-                                                                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3636:54: error: the value of 'TARGET_TYPE' is not usable in a constant expression<BR/>
-         k_IS_FUNDAMENTAL      = bslmf::IsFundamental<TARGET_TYPE>::value,<BR/>
-                                                      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3635:58: note: 'TARGET_TYPE' was not declared 'constexpr'<BR/>
-         k_IS_FUNCTION_POINTER = bslmf::IsFunctionPointer<TARGET_TYPE>::value,<BR/>
-                                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3636:65: error: type/value mismatch at argument 1 in template parameter list for 'template<class TYPE> struct BloombergLP::bslmf::IsFundamental'<BR/>
-         k_IS_FUNDAMENTAL      = bslmf::IsFundamental<TARGET_TYPE>::value,<BR/>
-                                                                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3636:65: error:   expected a type, got 'TARGET_TYPE'<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3637:50: error: the value of 'TARGET_TYPE' is not usable in a constant expression<BR/>
-         k_IS_POINTER          = bslmf::IsPointer<TARGET_TYPE>::value,<BR/>
-                                                  ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3635:58: note: 'TARGET_TYPE' was not declared 'constexpr'<BR/>
-         k_IS_FUNCTION_POINTER = bslmf::IsFunctionPointer<TARGET_TYPE>::value,<BR/>
-                                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3637:61: error: type/value mismatch at argument 1 in template parameter list for 'template<class TYPE> struct BloombergLP::bslmf::IsPointer'<BR/>
-         k_IS_POINTER          = bslmf::IsPointer<TARGET_TYPE>::value,<BR/>
-                                                             ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3637:61: error:   expected a type, got 'TARGET_TYPE'<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3642:60: error: the value of 'TARGET_TYPE' is not usable in a constant expression<BR/>
-         k_IS_BITWISECOPYABLE  = bsl::is_trivially_copyable<TARGET_TYPE>::value,<BR/>
-                                                            ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3635:58: note: 'TARGET_TYPE' was not declared 'constexpr'<BR/>
-         k_IS_FUNCTION_POINTER = bslmf::IsFunctionPointer<TARGET_TYPE>::value,<BR/>
-                                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3642:71: error: type/value mismatch at argument 1 in template parameter list for 'template<class TYPE> struct bsl::is_trivially_copyable'<BR/>
-         k_IS_BITWISECOPYABLE  = bsl::is_trivially_copyable<TARGET_TYPE>::value,<BR/>
-                                                                       ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3642:71: error:   expected a type, got 'TARGET_TYPE'<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3649:45: error: 'begin' was not declared in this scope<BR/>
-     ArrayPrimitives_Imp::uninitializedFillN(begin,<BR/>
-                                             ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3649:45: note: suggested alternatives:<BR/>
-In file included from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/string:51:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/string:56,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/stdexcept:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/stdexcept:56,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/array:38,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/array:54,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/tuple:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/tuple:54,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_pair.h:339,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:262,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/range_access.h:87:5: note:   'std::begin'<BR/>
-     begin(_Tp (&__arr)[_Nm])<BR/>
-     ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/initializer_list:54:0,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/utility:75,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:56,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/initializer_list:89:5: note:   'std::begin'<BR/>
-     begin(initializer_list<_Tp> __ils) noexcept<BR/>
-     ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3650:45: error: 'value' was not declared in this scope<BR/>
-                                             value,<BR/>
-                                             ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3651:45: error: 'numElements' was not declared in this scope<BR/>
-                                             numElements,<BR/>
-                                             ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3652:46: error: 'allocator' was not declared in this scope<BR/>
-                                             &allocator,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3652:46: note: suggested alternatives:<BR/>
-In file included from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/stringfwd.h:40:0,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/iosfwd:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:56,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/memoryfwd.h:64:11: note:   'std::allocator'<BR/>
-     class allocator;<BR/>
-           ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:101:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:69,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_iosfwd.h:45:29: note:   'bsl::allocator'<BR/>
- template <class TYPE> class allocator;<BR/>
-                             ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: At global scope:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3671:32: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3671:48: error: expected ',' or '...' before '<' token<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: In static member function 'static void BloombergLP::bslalg::ArrayPrimitives::copyConstruct(int)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3679:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3679:43: error: expected unqualified-id before '<' token<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3696:42: error: 'TARGET_TYPE' was not declared in this scope<BR/>
-     typedef typename bsl::remove_pointer<TARGET_TYPE>::type RemovePtrTarget;<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3696:53: error: template argument 1 is invalid<BR/>
-     typedef typename bsl::remove_pointer<TARGET_TYPE>::type RemovePtrTarget;<BR/>
-                                                     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3696:76: error: invalid type in declaration before ';' token<BR/>
-     typedef typename bsl::remove_pointer<TARGET_TYPE>::type RemovePtrTarget;<BR/>
-                                                                            ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3702:49: error: the value of 'TARGET_TYPE' is not usable in a constant expression<BR/>
-         k_TARGET_IS_VOID_PTR  = bsl::is_pointer<TARGET_TYPE>::value &&<BR/>
-                                                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3696:42: note: 'TARGET_TYPE' was not declared 'constexpr'<BR/>
-     typedef typename bsl::remove_pointer<TARGET_TYPE>::type RemovePtrTarget;<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3702:60: error: type/value mismatch at argument 1 in template parameter list for 'template<class TYPE> struct bsl::is_pointer'<BR/>
-         k_TARGET_IS_VOID_PTR  = bsl::is_pointer<TARGET_TYPE>::value &&<BR/>
-                                                            ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3702:60: error:   expected a type, got 'TARGET_TYPE'<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3710:40: error: 'toBegin' was not declared in this scope<BR/>
-     ArrayPrimitives_Imp::copyConstruct(toBegin,<BR/>
-                                        ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3711:40: error: 'fromBegin' was not declared in this scope<BR/>
-                                        fromBegin,<BR/>
-                                        ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3712:40: error: 'fromEnd' was not declared in this scope<BR/>
-                                        fromEnd,<BR/>
-                                        ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3713:40: error: 'allocator' was not declared in this scope<BR/>
-                                        allocator,<BR/>
-                                        ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3713:40: note: suggested alternatives:<BR/>
-In file included from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/stringfwd.h:40:0,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/iosfwd:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:56,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/memoryfwd.h:64:11: note:   'std::allocator'<BR/>
-     class allocator;<BR/>
-           ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:101:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:69,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_iosfwd.h:45:29: note:   'bsl::allocator'<BR/>
- template <class TYPE> class allocator;<BR/>
-                             ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: At global scope:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3733:31: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                 typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                               ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3733:47: error: expected ',' or '...' before '<' token<BR/>
-                 typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                               ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3732:6: error: redefinition of 'static void BloombergLP::bslalg::ArrayPrimitives::copyConstruct(int)'<BR/>
- void ArrayPrimitives::copyConstruct(<BR/>
-      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3670:6: note: 'static void BloombergLP::bslalg::ArrayPrimitives::copyConstruct(int)' previously declared here<BR/>
- void ArrayPrimitives::copyConstruct(<BR/>
-      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3775:33: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                   typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3775:49: error: expected ',' or '...' before '<' token<BR/>
-                   typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: In static member function 'static void BloombergLP::bslalg::ArrayPrimitives::moveConstruct(int)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3782:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3782:43: error: expected unqualified-id before '<' token<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3785:46: error: 'TARGET_TYPE' was not declared in this scope<BR/>
-         k_VALUE = bsl::is_trivially_copyable<TARGET_TYPE>::value<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3785:57: error: template argument 1 is invalid<BR/>
-         k_VALUE = bsl::is_trivially_copyable<TARGET_TYPE>::value<BR/>
-                                                         ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3790:40: error: 'toBegin' was not declared in this scope<BR/>
-     ArrayPrimitives_Imp::moveConstruct(toBegin,<BR/>
-                                        ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3791:40: error: 'fromBegin' was not declared in this scope<BR/>
-                                        fromBegin,<BR/>
-                                        ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3792:40: error: 'fromEnd' was not declared in this scope<BR/>
-                                        fromEnd,<BR/>
-                                        ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3793:40: error: 'allocator' was not declared in this scope<BR/>
-                                        allocator,<BR/>
-                                        ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3793:40: note: suggested alternatives:<BR/>
-In file included from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/stringfwd.h:40:0,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/iosfwd:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:56,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/memoryfwd.h:64:11: note:   'std::allocator'<BR/>
-     class allocator;<BR/>
-           ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:101:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:69,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_iosfwd.h:45:29: note:   'bsl::allocator'<BR/>
- template <class TYPE> class allocator;<BR/>
-                             ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: At global scope:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3800:31: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                 typename bsl::allocator_traits<ALLOCATOR>::pointer begin,<BR/>
-                               ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3800:47: error: expected ',' or '...' before '<' token<BR/>
-                 typename bsl::allocator_traits<ALLOCATOR>::pointer begin,<BR/>
-                                               ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: In static member function 'static void BloombergLP::bslalg::ArrayPrimitives::defaultConstruct(int)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3807:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3807:43: error: expected unqualified-id before '<' token<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3810:59: error: 'TARGET_TYPE' was not declared in this scope<BR/>
-         k_VALUE = bsl::is_trivially_default_constructible<TARGET_TYPE>::value<BR/>
-                                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3810:70: error: template argument 1 is invalid<BR/>
-         k_VALUE = bsl::is_trivially_default_constructible<TARGET_TYPE>::value<BR/>
-                                                                      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3812:44: error: the value of 'TARGET_TYPE' is not usable in a constant expression<BR/>
-               : bsl::is_trivially_copyable<TARGET_TYPE>::value<BR/>
-                                            ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3810:59: note: 'TARGET_TYPE' was not declared 'constexpr'<BR/>
-         k_VALUE = bsl::is_trivially_default_constructible<TARGET_TYPE>::value<BR/>
-                                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3812:55: error: type/value mismatch at argument 1 in template parameter list for 'template<class TYPE> struct bsl::is_trivially_copyable'<BR/>
-               : bsl::is_trivially_copyable<TARGET_TYPE>::value<BR/>
-                                                       ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3812:55: error:   expected a type, got 'TARGET_TYPE'<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3816:43: error: 'begin' was not declared in this scope<BR/>
-     ArrayPrimitives_Imp::defaultConstruct(begin,<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3816:43: note: suggested alternatives:<BR/>
-In file included from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/string:51:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/string:56,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/stdexcept:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/stdexcept:56,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/array:38,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/array:54,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/tuple:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/tuple:54,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_pair.h:339,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:262,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/range_access.h:87:5: note:   'std::begin'<BR/>
-     begin(_Tp (&__arr)[_Nm])<BR/>
-     ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/initializer_list:54:0,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/utility:75,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:56,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/initializer_list:89:5: note:   'std::begin'<BR/>
-     begin(initializer_list<_Tp> __ils) noexcept<BR/>
-     ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3817:43: error: 'numElements' was not declared in this scope<BR/>
-                                           numElements,<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3818:43: error: 'allocator' was not declared in this scope<BR/>
-                                           allocator,<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3818:43: note: suggested alternatives:<BR/>
-In file included from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/stringfwd.h:40:0,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/iosfwd:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:56,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/memoryfwd.h:64:11: note:   'std::allocator'<BR/>
-     class allocator;<BR/>
-           ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:101:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:69,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_iosfwd.h:45:29: note:   'bsl::allocator'<BR/>
- template <class TYPE> class allocator;<BR/>
-                             ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: At global scope:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3836:32: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3836:48: error: expected ',' or '...' before '<' token<BR/>
-                  typename bsl::allocator_traits<ALLOCATOR>::pointer toBegin,<BR/>
-                                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: In static member function 'static void BloombergLP::bslalg::ArrayPrimitives::destructiveMove(int)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3844:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3844:43: error: expected unqualified-id before '<' token<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3847:44: error: 'TARGET_TYPE' was not declared in this scope<BR/>
-         k_VALUE = bslmf::IsBitwiseMoveable<TARGET_TYPE>::value<BR/>
-                                            ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3847:55: error: template argument 1 is invalid<BR/>
-         k_VALUE = bslmf::IsBitwiseMoveable<TARGET_TYPE>::value<BR/>
-                                                       ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3851:42: error: 'toBegin' was not declared in this scope<BR/>
-     ArrayPrimitives_Imp::destructiveMove(toBegin,<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3852:42: error: 'fromBegin' was not declared in this scope<BR/>
-                                          fromBegin,<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3853:42: error: 'fromEnd' was not declared in this scope<BR/>
-                                          fromEnd,<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3854:42: error: 'allocator' was not declared in this scope<BR/>
-                                          allocator,<BR/>
-                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3854:42: note: suggested alternatives:<BR/>
-In file included from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/stringfwd.h:40:0,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/iosfwd:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:56,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/memoryfwd.h:64:11: note:   'std::allocator'<BR/>
-     class allocator;<BR/>
-           ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:101:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:69,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_iosfwd.h:45:29: note:   'bsl::allocator'<BR/>
- template <class TYPE> class allocator;<BR/>
-                             ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: At global scope:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3873:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3873:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: In static member function 'static void BloombergLP::bslalg::ArrayPrimitives::destructiveMoveAndInsert(int)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3891:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3891:43: error: expected unqualified-id before '<' token<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3893:6: error: 'fromEndPtr' was not declared in this scope<BR/>
-     *fromEndPtr = fromEnd;<BR/>
-      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3893:19: error: 'fromEnd' was not declared in this scope<BR/>
-     *fromEndPtr = fromEnd;<BR/>
-                   ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3901:5: error: 'TARGET_TYPE' was not declared in this scope<BR/>
-     TARGET_TYPE *toPositionBegin = toBegin + (position - fromBegin);<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3901:18: error: 'toPositionBegin' was not declared in this scope<BR/>
-     TARGET_TYPE *toPositionBegin = toBegin + (position - fromBegin);<BR/>
-                  ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3901:36: error: 'toBegin' was not declared in this scope<BR/>
-     TARGET_TYPE *toPositionBegin = toBegin + (position - fromBegin);<BR/>
-                                    ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3901:47: error: 'position' was not declared in this scope<BR/>
-     TARGET_TYPE *toPositionBegin = toBegin + (position - fromBegin);<BR/>
-                                               ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3901:58: error: 'fromBegin' was not declared in this scope<BR/>
-     TARGET_TYPE *toPositionBegin = toBegin + (position - fromBegin);<BR/>
-                                                          ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3902:39: error: 'numElements' was not declared in this scope<BR/>
-     defaultConstruct(toPositionBegin, numElements, allocator);<BR/>
-                                       ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3902:52: error: 'allocator' was not declared in this scope<BR/>
-     defaultConstruct(toPositionBegin, numElements, allocator);<BR/>
-                                                    ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3902:52: note: suggested alternatives:<BR/>
-In file included from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/stringfwd.h:40:0,<BR/>
-                 from /opt/swt/install/gcc-4.9.2/include/c++/4.9.2/iosfwd:39,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:56,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/opt/swt/install/gcc-4.9.2/include/c++/4.9.2/bits/memoryfwd.h:64:11: note:   'std::allocator'<BR/>
-     class allocator;<BR/>
-           ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:101:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/iosfwd:69,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsls/bsls_timeinterval.h:107,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_istriviallycopyable.h:137,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslmf/bslmf_isbitwisemoveable.h:585,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocator.h:389,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.h:203,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:10:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_iosfwd.h:45:29: note:   'bsl::allocator'<BR/>
- template <class TYPE> class allocator;<BR/>
-                             ^<BR/>
-In file included from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslstl/bslstl_vector.h:504:0,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:146,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue_recursive.h:469,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/bsl_stdhdrs_epilogue.h:31,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bsl+stdhdrs/utility:65,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslma/bslma_allocatortraits.h:436,<BR/>
-                 from /bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arraydestructionprimitives.h:111,<BR/>
-                 from ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:17:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3904:18: error: 'toPositionEnd' was not declared in this scope<BR/>
-     TARGET_TYPE *toPositionEnd   = toPositionBegin + numElements;<BR/>
-                  ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3905:25: error: the value of 'TARGET_TYPE' is not usable in a constant expression<BR/>
-     AutoArrayDestructor<TARGET_TYPE, ALLOCATOR> guard(toPositionBegin,<BR/>
-                         ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3901:5: note: 'TARGET_TYPE' was not declared 'constexpr'<BR/>
-     TARGET_TYPE *toPositionBegin = toBegin + (position - fromBegin);<BR/>
-     ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3905:47: error: type/value mismatch at argument 1 in template parameter list for 'template<class OBJECT_TYPE, class ALLOCATOR> class BloombergLP::bslalg::AutoArrayDestructor'<BR/>
-     AutoArrayDestructor<TARGET_TYPE, ALLOCATOR> guard(toPositionBegin,<BR/>
-                                               ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3905:47: error:   expected a type, got 'TARGET_TYPE'<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3905:54: error: invalid type in declaration before '(' token<BR/>
-     AutoArrayDestructor<TARGET_TYPE, ALLOCATOR> guard(toPositionBegin,<BR/>
-                                                      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3907:64: error: expression list treated as compound expression in initializer [-fpermissive]<BR/>
-                                                       allocator);<BR/>
-                                                                ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3920:11: error: request for member 'moveEnd' in 'guard', which is of non-class type 'int'<BR/>
-     guard.moveEnd(fromEnd - position);  // toEnd<BR/>
-           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3933:11: error: request for member 'release' in 'guard', which is of non-class type 'int'<BR/>
-     guard.release();<BR/>
-           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: At global scope:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3958:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3958:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3957:6: error: redefinition of 'static void BloombergLP::bslalg::ArrayPrimitives::destructiveMoveAndInsert(int)'<BR/>
- void ArrayPrimitives::destructiveMoveAndInsert(<BR/>
-      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3872:6: note: 'static void BloombergLP::bslalg::ArrayPrimitives::destructiveMoveAndInsert(int)' previously declared here<BR/>
- void ArrayPrimitives::destructiveMoveAndInsert(<BR/>
-      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:4048:30: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:4048:46: error: expected ',' or '...' before '<' token<BR/>
-                typename bsl::allocator_traits<ALLOCATOR>::pointer  toBegin,<BR/>
-                                              ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h: In static member function 'static void BloombergLP::bslalg::ArrayPrimitives::destructiveMoveAndInsert(int)':<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:4068:27: error: 'allocator_traits' in namespace 'bsl' does not name a template type<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                           ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:4068:43: error: expected unqualified-id before '<' token<BR/>
-     typedef typename bsl::allocator_traits<ALLOCATOR>::value_type TARGET_TYPE;<BR/>
-                   ../../bde/groups/bdl/bdlcc/bdlcc_fixedqueueindexmanager.cpp:349:60:   required from here<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3830:65: error: no matching function for call to 'BloombergLP::bslalg::ArrayPrimitives::defaultConstruct(BloombergLP::bsls::AtomicInt*&, BloombergLP::bslalg::ArrayPrimitives::size_type&, bsl::allocator<BloombergLP::bsls::AtomicInt>)'<BR/>
-                      bsl::allocator<TARGET_TYPE>(basicAllocator));<BR/>
-                                                                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3830:65: note: candidates are:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:564:17: note: template<class ALLOCATOR> static void BloombergLP::bslalg::ArrayPrimitives::defaultConstruct(int)<BR/>
-     static void defaultConstruct(<BR/>
-                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:564:17: note:   template argument deduction/substitution failed:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3830:65: note:   cannot convert 'begin' (type 'BloombergLP::bsls::AtomicInt*') to type 'int'<BR/>
-                      bsl::allocator<TARGET_TYPE>(basicAllocator));<BR/>
-                                                                 ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3824:6: note: template<class TARGET_TYPE> static void BloombergLP::bslalg::ArrayPrimitives::defaultConstruct(TARGET_TYPE*, BloombergLP::bslalg::ArrayPrimitives::size_type, BloombergLP::bslma::Allocator*)<BR/>
- void ArrayPrimitives::defaultConstruct(TARGET_TYPE      *begin,<BR/>
-      ^<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3824:6: note:   template argument deduction/substitution failed:<BR/>
-/bb/bde/oneshot-builds/mgiroux_FLBZIXHQB8TI/bde/groups/bsl/bslalg/bslalg_arrayprimitives.h:3830:65: note:   cannot convert 'bsl::allocator<BloombergLP::bsls::AtomicInt>(basicAllocator)' (type 'bsl::allocator<BloombergLP::bsls::AtomicInt>') to type 'BloombergLP::bslma::Allocator*'<BR/>
-                      bsl::allocator<TARGET_TYPE>(basicAllocator));<BR/>
-                                                                 ^<BR/>
+<a name="top"></a>
+<ul>
+       
+       <li><a href="#table0"><pre> balb_controlmanager                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table1"><pre> balb_performancemonitor                           [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table2"><pre> balb_pipecontrolchannel                           [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table3"><pre> balb_testmessages                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table4"><pre> balber_berconstants                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table5"><pre> balber_berdecoder                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table6"><pre> balber_berdecoderoptions                          [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table7"><pre> balber_berencoder                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table8"><pre> balber_berencoderoptions                          [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table9"><pre> balber_beruniversaltagnumber                      [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table10"><pre> balber_berutil                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table11"><pre> baljsn_decoder                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table12"><pre> baljsn_decoderoptions                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table13"><pre> baljsn_encoder                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table14"><pre> baljsn_encoderoptions                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table15"><pre> baljsn_parserutil                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table16"><pre> baljsn_printutil                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table17"><pre> baljsn_tokenizer                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table18"><pre> ball_administration                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table19"><pre> ball_asyncfileobserver                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table20"><pre> ball_attribute                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table21"><pre> ball_attributecontainer                           [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table22"><pre> ball_attributecontainerlist                       [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table23"><pre> ball_attributecontext                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table24"><pre> ball_category                                     [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table25"><pre> ball_categorymanager                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table26"><pre> ball_context                                      [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table27"><pre> ball_countingallocator                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table28"><pre> ball_defaultattributecontainer                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table29"><pre> ball_defaultobserver                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table30"><pre> ball_fileobserver                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table31"><pre> ball_fileobserver2                                [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table32"><pre> ball_fixedsizerecordbuffer                        [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table33"><pre> ball_log                                          [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table34"><pre> ball_loggercategoryutil                           [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table35"><pre> ball_loggerfunctorpayloads                        [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table36"><pre> ball_loggermanager                                [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table37"><pre> ball_loggermanagerconfiguration                   [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table38"><pre> ball_loggermanagerdefaults                        [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table39"><pre> ball_multiplexobserver                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table40"><pre> ball_observer                                     [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table41"><pre> ball_observeradapter                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table42"><pre> ball_patternutil                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table43"><pre> ball_predicate                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table44"><pre> ball_predicateset                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table45"><pre> ball_record                                       [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table46"><pre> ball_recordattributes                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table47"><pre> ball_recordbuffer                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table48"><pre> ball_recordstringformatter                        [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table49"><pre> ball_rule                                         [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table50"><pre> ball_ruleset                                      [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table51"><pre> ball_scopedattribute                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table52"><pre> ball_scopedattributes                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table53"><pre> ball_severity                                     [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table54"><pre> ball_severityutil                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table55"><pre> ball_testobserver                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table56"><pre> ball_thresholdaggregate                           [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table57"><pre> ball_transmission                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table58"><pre> ball_userfields                                   [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table59"><pre> ball_userfieldsschema                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table60"><pre> ball_userfieldtype                                [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table61"><pre> ball_userfieldvalue                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table62"><pre> balm_category                                     [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table63"><pre> balm_collector                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table64"><pre> balm_collectorrepository                          [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table65"><pre> balm_configurationutil                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table66"><pre> balm_defaultmetricsmanager                        [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table67"><pre> balm_integercollector                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table68"><pre> balm_integermetric                                [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table69"><pre> balm_metric                                       [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table70"><pre> balm_metricdescription                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table71"><pre> balm_metricformat                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table72"><pre> balm_metricid                                     [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table73"><pre> balm_metricrecord                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table74"><pre> balm_metricregistry                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table75"><pre> balm_metrics                                      [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table76"><pre> balm_metricsample                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table77"><pre> balm_metricsmanager                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table78"><pre> balm_publicationscheduler                         [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table79"><pre> balm_publicationtype                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table80"><pre> balm_publisher                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table81"><pre> balm_stopwatchscopedguard                         [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table82"><pre> balm_streampublisher                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table83"><pre> balscm_version                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table84"><pre> balscm_versiontag                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table85"><pre> balst_assertionlogger                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table86"><pre> balst_dbghelpdllimpl_windows                      [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table87"><pre> balst_objectfileformat                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table88"><pre> balst_stackaddressutil                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table89"><pre> balst_stacktrace                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table90"><pre> balst_stacktraceframe                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table91"><pre> balst_stacktraceprintutil                         [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table92"><pre> balst_stacktraceresolver_filehelper               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table93"><pre> balst_stacktraceresolverimpl_dladdr               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table94"><pre> balst_stacktraceresolverimpl_elf                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table95"><pre> balst_stacktraceresolverimpl_windows              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table96"><pre> balst_stacktraceresolverimpl_xcoff                [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table97"><pre> balst_stacktracetestallocator                     [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table98"><pre> balst_stacktraceutil                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table99"><pre> baltzo_datafileloader                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table100"><pre> baltzo_defaultzoneinfocache                       [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table101"><pre> baltzo_dstpolicy                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table102"><pre> baltzo_errorcode                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table103"><pre> baltzo_loader                                     [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table104"><pre> baltzo_localdatetime                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table105"><pre> baltzo_localtimedescriptor                        [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table106"><pre> baltzo_localtimeoffsetutil                        [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table107"><pre> baltzo_localtimeperiod                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table108"><pre> baltzo_localtimevalidity                          [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table109"><pre> baltzo_testloader                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table110"><pre> baltzo_timezoneutil                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table111"><pre> baltzo_timezoneutilimp                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table112"><pre> baltzo_windowstimezoneutil                        [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table113"><pre> baltzo_zoneinfo                                   [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table114"><pre> baltzo_zoneinfobinaryheader                       [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table115"><pre> baltzo_zoneinfobinaryreader                       [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table116"><pre> baltzo_zoneinfocache                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table117"><pre> baltzo_zoneinfoutil                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table118"><pre> balxml_base64parser                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table119"><pre> balxml_configschema                               [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table120"><pre> balxml_decoder                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table121"><pre> balxml_decoderoptions                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table122"><pre> balxml_elementattribute                           [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table123"><pre> balxml_encoder                                    [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table124"><pre> balxml_encoderoptions                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table125"><pre> balxml_encodingstyle                              [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table126"><pre> balxml_errorinfo                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table127"><pre> balxml_formatter                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table128"><pre> balxml_hexparser                                  [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table129"><pre> balxml_listparser                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table130"><pre> balxml_minireader                                 [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table131"><pre> balxml_namespaceregistry                          [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table132"><pre> balxml_prefixstack                                [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table133"><pre> balxml_reader                                     [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table134"><pre> balxml_typesparserutil                            [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table135"><pre> balxml_typesprintutil                             [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table136"><pre> balxml_util                                       [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+       
+       <li><a href="#table137"><pre> balxml_validatingreader                           [unix-SunOS-sparc-5.10-cc-5.12           , dbg_exc_mt_cpp11    ]</pre></a>
+</ul>
+    <a name="table0"></a>
+    <h1><pre>balb_controlmanager  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
 
+    </pre>
+    <a name="table1"></a>
+    <h1><pre>balb_performancemonitor  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table2"></a>
+    <h1><pre>balb_pipecontrolchannel  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table3"></a>
+    <h1><pre>balb_testmessages  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table4"></a>
+    <h1><pre>balber_berconstants  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table5"></a>
+    <h1><pre>balber_berdecoder  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table6"></a>
+    <h1><pre>balber_berdecoderoptions  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table7"></a>
+    <h1><pre>balber_berencoder  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table8"></a>
+    <h1><pre>balber_berencoderoptions  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table9"></a>
+    <h1><pre>balber_beruniversaltagnumber  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table10"></a>
+    <h1><pre>balber_berutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table11"></a>
+    <h1><pre>baljsn_decoder  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table12"></a>
+    <h1><pre>baljsn_decoderoptions  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table13"></a>
+    <h1><pre>baljsn_encoder  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table14"></a>
+    <h1><pre>baljsn_encoderoptions  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table15"></a>
+    <h1><pre>baljsn_parserutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table16"></a>
+    <h1><pre>baljsn_printutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table17"></a>
+    <h1><pre>baljsn_tokenizer  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table18"></a>
+    <h1><pre>ball_administration  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table19"></a>
+    <h1><pre>ball_asyncfileobserver  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table20"></a>
+    <h1><pre>ball_attribute  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table21"></a>
+    <h1><pre>ball_attributecontainer  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table22"></a>
+    <h1><pre>ball_attributecontainerlist  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table23"></a>
+    <h1><pre>ball_attributecontext  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table24"></a>
+    <h1><pre>ball_category  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table25"></a>
+    <h1><pre>ball_categorymanager  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table26"></a>
+    <h1><pre>ball_context  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table27"></a>
+    <h1><pre>ball_countingallocator  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table28"></a>
+    <h1><pre>ball_defaultattributecontainer  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table29"></a>
+    <h1><pre>ball_defaultobserver  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table30"></a>
+    <h1><pre>ball_fileobserver  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table31"></a>
+    <h1><pre>ball_fileobserver2  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table32"></a>
+    <h1><pre>ball_fixedsizerecordbuffer  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table33"></a>
+    <h1><pre>ball_log  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table34"></a>
+    <h1><pre>ball_loggercategoryutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table35"></a>
+    <h1><pre>ball_loggerfunctorpayloads  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table36"></a>
+    <h1><pre>ball_loggermanager  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table37"></a>
+    <h1><pre>ball_loggermanagerconfiguration  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table38"></a>
+    <h1><pre>ball_loggermanagerdefaults  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table39"></a>
+    <h1><pre>ball_multiplexobserver  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table40"></a>
+    <h1><pre>ball_observer  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table41"></a>
+    <h1><pre>ball_observeradapter  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table42"></a>
+    <h1><pre>ball_patternutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table43"></a>
+    <h1><pre>ball_predicate  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table44"></a>
+    <h1><pre>ball_predicateset  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table45"></a>
+    <h1><pre>ball_record  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table46"></a>
+    <h1><pre>ball_recordattributes  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table47"></a>
+    <h1><pre>ball_recordbuffer  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table48"></a>
+    <h1><pre>ball_recordstringformatter  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table49"></a>
+    <h1><pre>ball_rule  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table50"></a>
+    <h1><pre>ball_ruleset  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table51"></a>
+    <h1><pre>ball_scopedattribute  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table52"></a>
+    <h1><pre>ball_scopedattributes  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table53"></a>
+    <h1><pre>ball_severity  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table54"></a>
+    <h1><pre>ball_severityutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table55"></a>
+    <h1><pre>ball_testobserver  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table56"></a>
+    <h1><pre>ball_thresholdaggregate  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table57"></a>
+    <h1><pre>ball_transmission  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table58"></a>
+    <h1><pre>ball_userfields  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table59"></a>
+    <h1><pre>ball_userfieldsschema  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table60"></a>
+    <h1><pre>ball_userfieldtype  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table61"></a>
+    <h1><pre>ball_userfieldvalue  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table62"></a>
+    <h1><pre>balm_category  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table63"></a>
+    <h1><pre>balm_collector  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table64"></a>
+    <h1><pre>balm_collectorrepository  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table65"></a>
+    <h1><pre>balm_configurationutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table66"></a>
+    <h1><pre>balm_defaultmetricsmanager  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table67"></a>
+    <h1><pre>balm_integercollector  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table68"></a>
+    <h1><pre>balm_integermetric  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table69"></a>
+    <h1><pre>balm_metric  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table70"></a>
+    <h1><pre>balm_metricdescription  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table71"></a>
+    <h1><pre>balm_metricformat  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table72"></a>
+    <h1><pre>balm_metricid  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table73"></a>
+    <h1><pre>balm_metricrecord  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table74"></a>
+    <h1><pre>balm_metricregistry  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table75"></a>
+    <h1><pre>balm_metrics  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table76"></a>
+    <h1><pre>balm_metricsample  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table77"></a>
+    <h1><pre>balm_metricsmanager  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table78"></a>
+    <h1><pre>balm_publicationscheduler  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table79"></a>
+    <h1><pre>balm_publicationtype  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table80"></a>
+    <h1><pre>balm_publisher  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table81"></a>
+    <h1><pre>balm_stopwatchscopedguard  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table82"></a>
+    <h1><pre>balm_streampublisher  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table83"></a>
+    <h1><pre>balscm_version  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table84"></a>
+    <h1><pre>balscm_versiontag  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table85"></a>
+    <h1><pre>balst_assertionlogger  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table86"></a>
+    <h1><pre>balst_dbghelpdllimpl_windows  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table87"></a>
+    <h1><pre>balst_objectfileformat  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table88"></a>
+    <h1><pre>balst_stackaddressutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table89"></a>
+    <h1><pre>balst_stacktrace  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table90"></a>
+    <h1><pre>balst_stacktraceframe  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table91"></a>
+    <h1><pre>balst_stacktraceprintutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table92"></a>
+    <h1><pre>balst_stacktraceresolver_filehelper  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table93"></a>
+    <h1><pre>balst_stacktraceresolverimpl_dladdr  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table94"></a>
+    <h1><pre>balst_stacktraceresolverimpl_elf  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table95"></a>
+    <h1><pre>balst_stacktraceresolverimpl_windows  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table96"></a>
+    <h1><pre>balst_stacktraceresolverimpl_xcoff  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table97"></a>
+    <h1><pre>balst_stacktracetestallocator  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table98"></a>
+    <h1><pre>balst_stacktraceutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table99"></a>
+    <h1><pre>baltzo_datafileloader  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table100"></a>
+    <h1><pre>baltzo_defaultzoneinfocache  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table101"></a>
+    <h1><pre>baltzo_dstpolicy  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table102"></a>
+    <h1><pre>baltzo_errorcode  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table103"></a>
+    <h1><pre>baltzo_loader  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table104"></a>
+    <h1><pre>baltzo_localdatetime  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table105"></a>
+    <h1><pre>baltzo_localtimedescriptor  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table106"></a>
+    <h1><pre>baltzo_localtimeoffsetutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table107"></a>
+    <h1><pre>baltzo_localtimeperiod  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table108"></a>
+    <h1><pre>baltzo_localtimevalidity  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table109"></a>
+    <h1><pre>baltzo_testloader  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table110"></a>
+    <h1><pre>baltzo_timezoneutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table111"></a>
+    <h1><pre>baltzo_timezoneutilimp  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table112"></a>
+    <h1><pre>baltzo_windowstimezoneutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table113"></a>
+    <h1><pre>baltzo_zoneinfo  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table114"></a>
+    <h1><pre>baltzo_zoneinfobinaryheader  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table115"></a>
+    <h1><pre>baltzo_zoneinfobinaryreader  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table116"></a>
+    <h1><pre>baltzo_zoneinfocache  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table117"></a>
+    <h1><pre>baltzo_zoneinfoutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table118"></a>
+    <h1><pre>balxml_base64parser  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table119"></a>
+    <h1><pre>balxml_configschema  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table120"></a>
+    <h1><pre>balxml_decoder  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table121"></a>
+    <h1><pre>balxml_decoderoptions  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table122"></a>
+    <h1><pre>balxml_elementattribute  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table123"></a>
+    <h1><pre>balxml_encoder  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table124"></a>
+    <h1><pre>balxml_encoderoptions  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table125"></a>
+    <h1><pre>balxml_encodingstyle  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table126"></a>
+    <h1><pre>balxml_errorinfo  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table127"></a>
+    <h1><pre>balxml_formatter  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table128"></a>
+    <h1><pre>balxml_hexparser  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table129"></a>
+    <h1><pre>balxml_listparser  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table130"></a>
+    <h1><pre>balxml_minireader  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table131"></a>
+    <h1><pre>balxml_namespaceregistry  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table132"></a>
+    <h1><pre>balxml_prefixstack  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table133"></a>
+    <h1><pre>balxml_reader  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table134"></a>
+    <h1><pre>balxml_typesparserutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table135"></a>
+    <h1><pre>balxml_typesprintutil  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+"../../bde/groups/bal/balxml/balxml_typesprintutil.cpp", line 1031: Warning (Anachronism): Using extern "C" int(*)(int) to initialize int(*)(int).
+1 Warning(s) detected.
+
+    </pre>
+    <a name="table136"></a>
+    <h1><pre>balxml_util  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
+    <a name="table137"></a>
+    <h1><pre>balxml_validatingreader  [unix-SunOS-sparc-5.10-cc-5.12, dbg_exc_mt_cpp11]</pre></h1> 
+    <a href="#top">top</a> 
+    <pre>
+         nysbldo6 nysbldo6
+CC: Warning: Option --this-compiler-does-not-have-cpp11-support-configured passed to ld, if ld is invoked, ignored otherwise
+
+    </pre>
 
