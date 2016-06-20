@@ -2,7 +2,7 @@
 
 import uplid
 
-class ResultTable:
+class TableDescription:
     def __init__(self, title, link_text, column_headers, data, detail_link_function = None):    
         self.title = title
         self.link_text = link_text

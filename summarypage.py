@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 from mako.template import Template
-from result_table import ResultTable
-import results_sqlite_query
+from lib.tabledescription import TableDescription
+from lib import resultsquery
 import sqlite3
 
 def create_detail_link_function(headers, category):
@@ -20,25 +20,25 @@ def create_summary_link_function(headers):
 
 def main():
     conn = sqlite3.connect('example_results.db')
-    result = results_sqlite_query.create_summary_table(conn)
-    results = [ResultTable("Build Summary", "Build Summary", result[0][0], result[1], create_summary_link_function(result[0][0]))]
+    result = resultsquery.create_summary_table(conn)
+    results = [TableDescription("Build Summary", "Build Summary", result[0][0], result[1], create_summary_link_function(result[0][0]))]
 
     DETAILS = ['BUILD_ERROR', 'TEST_RUN_FAILURE', 'BUILD_WARNING']
     for type in DETAILS:
-        result = results_sqlite_query.create_package_group_detail_table(conn, type)
-        results.append(ResultTable(results_sqlite_query.category_transform(type),
-                                   results_sqlite_query.category_transform(type),
+        result = resultsquery.create_package_group_detail_table(conn, type)
+        results.append(TableDescription(resultsquery.category_transform(type),
+                                   resultsquery.category_transform(type),
                                    result[0][0], 
                                    result[1],
                                    create_detail_link_function(result[0][0], type)))
     
-    commit_info = results_sqlite_query.create_commit_information_table(conn)
-    attribute_info = results_sqlite_query.create_build_attributes_information_table(conn)
+    commit_info = resultsquery.create_commit_information_table(conn)
+    attribute_info = resultsquery.create_build_attributes_information_table(conn)
     results.append(commit_info)
     results.append(attribute_info)
     
-    print(Template(filename="./results_page.mako").render(tables = results,
-                                                        commit_info = commit_info))
+    print(Template(filename="./summarypage.mako").render(tables = results,
+                                                         commit_info = commit_info))
     conn.close()          
 
 if __name__ == "__main__":

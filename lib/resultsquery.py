@@ -2,8 +2,8 @@
 
 import sqlite3
 
-from pivot_table import PivotTable
-from result_table import ResultTable
+from pivottable import PivotTable
+from tabledescription import TableDescription
 from uplid import UplidDescription
 
 CATEGORY_SORT_KEY = { 'BUILD_ERROR'      : 0, 
@@ -138,9 +138,9 @@ def create_commit_information_table(db_connection):
                       ORDER BY priority""")
     raw_table = cursor.fetchall()        
     
-    return ResultTable("Repository Info", "Repositories",
-                       ["repository", "bbranch", "sha"],
-                       raw_table)
+    return TableDescription("Repository Info", "Repositories",
+                            ["repository", "bbranch", "sha"],
+                            raw_table)
                        
 def create_build_attributes_information_table(db_connection):
     cursor = db_connection.cursor()    
@@ -149,9 +149,9 @@ def create_build_attributes_information_table(db_connection):
                       ORDER BY name""")
     raw_table = cursor.fetchall()        
     
-    return ResultTable("Build Attributes", "Build Attributes",
-                       ["Attribute", "Value"],
-                       raw_table)
+    return TableDescription("Build Attributes", "Build Attributes",
+                            ["Attribute", "Value"],
+                            raw_table)
 
 def main():
     conn = sqlite3.connect('example_results.db')

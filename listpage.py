@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 from mako.template import Template
-from result_table import ResultTable
-import results_sqlite_query
+from lib.tabledescription import TableDescription
+from lib import resultsquery
 import sqlite3
 
 def create_detail_link_function(headers, category):
@@ -20,8 +20,8 @@ def create_summary_link_function(headers):
 
 def main():
     conn = sqlite3.connect('example_results.db')
-    result = results_sqlite_query.create_failure_list(conn, "TEST_RUN_FAILURE", 20)
-    print(Template(filename="./resultlist_page.mako").render(result = result))
+    result = resultsquery.create_failure_list(conn, "TEST_RUN_FAILURE", 20)
+    print(Template(filename="./listpage.mako").render(result = result))
     conn.close()          
 
 if __name__ == "__main__":

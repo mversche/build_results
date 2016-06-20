@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 from mako.template import Template
-from result_table import ResultTable
-import results_sqlite_query
+from lib.tabledescription import TableDescription
+from lib import resultsquery
 import sqlite3
 import argparse
 
@@ -53,7 +53,7 @@ def main():
     conn.close()               
 
     parsed_table = list(map(lambda x: {'uplid': x[0], 'ufid': x[1], 'uor': x[2], 'component': x[3], 'diagnostic': x[4]}, raw_table))
-    print(Template(filename="./detail_page.mako").render(details = parsed_table))
+    print(Template(filename="./detailpage.mako").render(details = parsed_table))
     
 if __name__ == "__main__":
     main()
