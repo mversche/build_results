@@ -1,3 +1,4 @@
+<html>
 <head>
 <link rel="stylesheet" type="text/css" href="detail.css">
 </head>
@@ -20,3 +21,4 @@
         ${row['diagnostic']}
     </pre>
 % endfor
+</html>

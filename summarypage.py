@@ -1,19 +1,24 @@
 #!/usr/bin/env python
 
 from mako.template import Template
+import cgi
+import cgitb
+import os
+import sqlite3
+
 from lib.tabledescription import TableDescription
 from lib import resultsquery
-import sqlite3
+
 
 def create_detail_link_function(headers, category):
     def create_detail_link(row, col_index):
-        return "detail.py uplid='{}' ufid='{}' category='{}' uor='{}'".format(
+        return "detailpage.py?uplid={}&ufid={}&category={}&uor={}".format(
             row[0], row[1], category, headers[col_index])
     return create_detail_link
     
 def create_summary_link_function(headers):
     def create_detail_link(row, col_index):
-        return "detail.py uplid='{}' ufid='{}' category='{}'".format(
+        return "detailpage.py?uplid={}&ufid={}&category={}".format(
             row[0], row[1], headers[col_index])
             
     return create_detail_link
@@ -36,11 +41,16 @@ def main():
     attribute_info = resultsquery.create_build_attributes_information_table(conn)
     results.append(commit_info)
     results.append(attribute_info)
-    
+
     print(Template(filename="./summarypage.mako").render(tables = results,
                                                          commit_info = commit_info))
     conn.close()          
 
 if __name__ == "__main__":
+    if 'GATEWAY_INTERFACE' in os.environ:
+        cgitb.enable()
+        print("Content-type: text/html")
+        print()
+
     main()
      
