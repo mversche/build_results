@@ -8,14 +8,14 @@ body {
     float: left;
     width: 1200px;
     margin: 0 auto;
-    background: #b3c2bf;
+    background: #FF9B49;
 }
 
 #header {
     float: left;
     height: 75px;
     width: 1200px;
-    background: #c0dfd9;
+    background: #FF7300;
     padding-left: 10px; 	
 	padding-top: 10px;
     padding-bottom: 10px;
@@ -23,14 +23,14 @@ body {
 
 #nav {
     float: left;
-    background: #b3c2bf;
+    background: #FF9B49;
     padding-left: 5px;
 	padding-top: 10px;
     padding-bottom: 10px;
     width: 200px;
 }
 
-#tableresults { 
+#resultbody {
     float: left;  
     padding-left: 5px;   
 	padding-top: 10px;	
@@ -45,7 +45,7 @@ ul.nav_links {
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #b3c2bf;
+    background-color: #FF9B49;
 }
 
 .nav_links li a {
@@ -61,15 +61,17 @@ ul.nav_links {
     color: white;
 }
 
-.box-table-a
+
+.resultstable
 {
 	font-family:Courier;
-	font-size: 12px;	
+	font-size: 14px;
 	width: 480px;
 	text-align: left;
 	border-collapse: collapse;
 }
-.box-table-a th
+
+.resultstable th
 {
 	font-size: 13px;
 	font-weight: normal;
@@ -79,10 +81,11 @@ ul.nav_links {
 	border-bottom: 1px solid #fff;
 	color: #039;
 }
-.box-table-a td
+
+.resultstable td
 {
 	padding: 8px;
-	background: #e8edff; 
+	background: #e8edff;
 	border-bottom: 1px solid #fff;
 	color: #669;
 	border-top: 1px solid transparent;
@@ -90,19 +93,19 @@ ul.nav_links {
 	border-left: 1px solid #aabcfe;
 }
 
-.box-table-a-red td
+.resultstable td[error]
 {
-	padding: 8px;
-	background: red; 
-	border-bottom: 1px solid #fff;
-	border-top: 1px solid transparent;
-	border-right: 1px solid #aabcfe;
-	border-left: 1px solid #aabcfe;
+	background: #ff0000;
 }
 
-.box-table-a tr:hover td
+.resultstable tr:hover td
 {
 	background: #d0dafd;
 	color: #339;
 }
 
+.resultstable tr:hover td[error]
+{
+	background: #cc0000;
+	color: #339;
+}

@@ -13,13 +13,13 @@
         % endfor
         </ul>
     </div>  
-    <div id="tableresults">
+    <div id="resultbody">
         % for (tableidx, table) in enumerate(tables):
             <a name="table${tableidx}"></a>
             <h2>
                 ${table.title}
             </h2>
-            <table class="box-table-a">
+            <table class="resultstable">
                 <tr>
                     % for cell in table.column_headers:
                     <th nowrap>${cell}</th>
@@ -31,7 +31,8 @@
                         % for idx, cell in enumerate(row):
                             %if type(cell) is int and table.detail_link_function is not None:
                                 <% linktarget = table.detail_link_function(row, idx) %>
-                                <td class="box-table-a-red" nowrap><a href="${linktarget}">${cell}</a></td>
+                                <% status = "" if cell == 0 else "error" %>
+                                <td ${status} nowrap><a href="${linktarget}">${cell}</a></td>
                             %else:
                                 <td nowrap>${cell}</td>
                             %endif

@@ -9,7 +9,7 @@
     <div id="nav">
         nav
     </div>  
-    <div id="tableresults">
+    <div id="resultbody">
         <table  class="box-table-a">
         % for idx, row in enumerate(result[0]):
             <tr>
